@@ -1,0 +1,21 @@
+body {
+background-image:url("stars.jpg");
+padding:25px;
+font-size:200%;
+margin:100px;
+padding:100px;
+width:1000px;
+}
+
+h1{
+color:cyan;
+padding:25px;
+background:silver;
+width:fit-content;
+font-family:cursive;
+font-size:300%;
+}
+
+font{font-weight:bold;}
+
+p.special{line-height:150%;border-style:double;}
