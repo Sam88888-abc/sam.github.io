@@ -1,0 +1,102 @@
+<html><head>
+<title>Infinity Knowledge University-Register Form</title>
+<link rel=icon href=sunflower.jpg type=image/jpg>
+<meta name=viewport content=width=device-width, initial-scale=1.0></head>
+<style>
+body{background-image:url('library.jpg');background-repeat:no-repeat;background-size:cover;background-position:center;}
+</style>  
+</head> <body topmargin=50>
+<center>
+
+<a href="ProjectHomepage.html"><img src="University.png" width="100px" height="100px" alt="Infinity Knowledge University"></a>
+
+<form>  
+<p style="background-color:yellow;
+color:#696969;font-family:verdana;
+font-size:160%;
+text-align:center;
+width:60%;height:110%;">
+<table width=100% height=100% border=5>
+<tr>
+<td colspan=2 align=center><b>Personal Details(Register)</b></td>
+</tr>
+
+<tr>
+<td align=left>First Name:</td>
+<td><input type=text name=fname size=40 maxlength=100></td>
+</tr>
+
+<tr>
+<td>Last Name: </td>
+<td><input type=text name=lname size=40 maxlength=100> </td>
+</tr>
+
+<tr>
+<td>Gender:</td>
+<td><input type=radio name=gender value=Male>Male
+<input type=radio name=gender value=Female>Female</td>
+</tr>
+
+<tr>
+<td>Phone number:</td>
+<td><input type=text name=pnumber size=40> </td>
+</tr>
+
+<tr>
+<td>Email:</td>
+<td><input type=text name=Email size=40> </td>
+</tr>
+
+<tr>
+<td>Address:</td>
+<td><textarea rows=4 cols=30 name=address></textarea></td>
+</tr>
+
+<tr>
+<td>Date of birth:</td>
+<td><input type=date name=dob></td>
+</tr>
+
+<tr>
+<td>Create password:</td>
+<td>
+<input type=password id="password" name=loginpass size=40 oninput="checkPasswordStrength()">
+<p id="strengthText"></p>
+<br>
+<input type=submit value=Submit>
+<input type =reset value=Reset>
+<br>
+<p><font size=2>Already have an account? <a href="">Login now</a></font></p>
+</td>
+</tr>
+
+</table>
+</p>
+</form> 
+</center>
+<script>
+function checkPasswordStrength() {
+  const password = document.getElementById('password').value;
+  const strengthText = document.getElementById('strengthText');
+  let strength = "";
+
+  if (password.length === 0) {
+    strength = "";
+  } else if (password.length < 6) {
+    strength = "Weak 🔴 (Too short)";
+    strengthText.style.color = "red";
+  } else if (password.match(/[a-z]/) && password.match(/[A-Z]/) && password.match(/[0-9]/) && password.match(/[\W_]/)) {
+    strength = "Strong 🟢";
+    strengthText.style.color = "green";
+  } else {
+    strength = "Medium 🟡 (Add uppercase, number or symbol)";
+    strengthText.style.color = "orange";
+  }
+
+  strengthText.textContent = strength;
+}
+</script>
+
+</body>
+</html>
+

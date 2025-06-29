@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Infinity Knowledge University</title>
+        <link rel="stylesheet" href="university3.css">
+        <link rel=icon href=University.png type=image/png>
+<meta name=viewport content=width=device-width, initial-scale=1.0>
+    </head>
+<body style="background-image:url(library2.jpg);
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;">
+        <nav>
+             <a href="ProjectHomepage.html"><img src="University.png"></a>
+        </nav>
+
+<section class="courses">
+  <h1><font color=yellow>Courses(Our Programmes)</font></h1>
+
+  <div class="course-item">
+    <button class="course-title" onclick="toggleDetails('course1')">Diploma in Computer Science</button>
+    <div class="course-details" id="course1">
+      <p><strong>Objective:</strong> Equip students with fundamental programming, networking, and software development skills.</p>
+      <p><strong>Core Subjects:</strong> Programming Basics, Database Systems, Computer Networks, Web Development.</p>
+    </div>
+  </div>
+
+  <div class="course-item">
+    <button class="course-title" onclick="toggleDetails('course2')">Foundation in Business</button>
+    <div class="course-details" id="course2">
+      <p><strong>Objective:</strong> Build a strong foundation in business and management principles to prepare for degree studies.</p>
+      <p><strong>Core Subjects:</strong> Business Mathematics, Introduction to Economics, Communication Skills, Management Fundamentals.</p>
+    </div>
+  </div>
+
+  <div class="course-item">
+    <button class="course-title" onclick="toggleDetails('course3')">Diploma in Business</button>
+    <div class="course-details" id="course3">
+      <p><strong>Objective:</strong> Provide practical knowledge in marketing, accounting, and entrepreneurship.</p>
+      <p><strong>Core Subjects:</strong> Marketing Principles, Financial Accounting, Business Law, Organizational Behavior.</p>
+    </div>
+  </div>
+
+  <div class="course-item">
+    <button class="course-title" onclick="toggleDetails('course4')">Bachelor of Business</button>
+    <div class="course-details" id="course4">
+      <p><strong>Objective:</strong> Develop strategic thinking and analytical skills for modern business environments.</p>
+      <p><strong>Core Subjects:</strong> Strategic Management, Finance, Business Analytics, International Business.</p>
+    </div>
+  </div>
+
+  <div class="course-item">
+    <button class="course-title" onclick="toggleDetails('course5')">Bachelor of Computer Science</button>
+    <div class="course-details" id="course5">
+      <p><strong>Objective:</strong> Train students in software engineering, AI, and advanced computing technologies.</p>
+      <p><strong>Core Subjects:</strong> Algorithms & Data Structures, Machine Learning, Operating Systems, Cloud Computing.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  function toggleDetails(id) {
+    const content = document.getElementById(id);
+    content.style.display = content.style.display === "block" ? "none" : "block";
+  }
+</script>
+  
+
+
+
+
+
+
+</body>
+</html>

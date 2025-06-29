@@ -1,0 +1,42 @@
+.admission {
+  width: 80%;
+  margin: 50px auto;
+  font-family: Arial, sans-serif;
+  line-height: 1.8;
+  color: #333;
+}
+
+.admission h1 {
+  text-align: center;
+  font-size: 36px;
+  color: gold;
+  margin-bottom: 30px;
+}
+
+
+.textbox {
+  background-color: #003366; 
+  color: #ffffff;            
+  padding: 60px 40px;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.textbox h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.textbox p {
+  font-size: 20px;
+}    
+
+nav{
+    display:flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items:center;
+}
+nav img{
+     width:100px;
+}
